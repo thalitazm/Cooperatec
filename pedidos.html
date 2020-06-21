@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style3.css"/>
 
-    <title>Contato</title>
+    <title>Minha Conta</title>
 </head>
 
 <body>
@@ -25,16 +25,25 @@
             </ul>
         </nav>
     </header>
-
     <section class="content">
         <div class="contato">
-            <h3>Sua opnião é muito importante!</h3>
-            <p>Ficou com dúvidas, tem sugestões ou quer reclamar de algo? Escreva para nós.</p>
+            <h3>Minha primeira compra</h3>
+            <p>Insira seus dados nos campos abaixo para fazer o cadastro no site</p>
             <form class="form" method="POST" action="email.php">
                 <input class="field" name="nome" placeholder="Digite seu nome:">
                 <input class="field" name="email" placeholder="Digite seu email:">
-                <textarea class="field" name="message" placeholder="Digite sua mensagem aqui:">
-                </textarea>
+                <input class="field" name="cpf" placeholder="Digite seu cpf:">
+                <input class="field" name="senha" placeholder="Digite uma senha:">
+                <input class="field" name="confsenha" placeholder="Confirme sua senha:">
+                <input class="field" type="submit" value="cadastrar">
+            </form>
+        </div>
+        <div class="contato">
+            <h3>Já possuo cadastro </h3>
+            <p>Informe nos campos abaixo os seus dados para acessar a sua conta</p>
+            <form class="form" method="POST" action="email.php">
+                <input class="field" name="nome" placeholder="Digite seu nome de usuário:">
+                <input class="field" name="senha" placeholder="Digite sua senha:">
                 <input class="field" type="submit" value="enviar">
             </form>
         </div>

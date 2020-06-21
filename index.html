@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style3.css"/>
 
-    <title>Contato</title>
+    <title>Cooperatec - A loja virtual da Cooperativa dos alunos da Etec</title>
 </head>
 
 <body>
@@ -13,15 +13,18 @@
         <a href="index.html"><img src="logo3.png"  alt="logoCooperatec"></a>
         <nav>
             <ul class="menu">
-            <li><a href="sobre.html">Sobre</a></li>
-            <li><a href="loja.html">Loja</a></li>
-            <li><a href="carrinho.html">Carrinho</a></li>
-            <li><a href="pedidos.html">Pedidos</a></li>
-            <li><a href="busca.html">Busca</a></li>
-            <li><a href="contato.html">Contato</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="loja.html">Loja</a></li>
+                <li><a href="pedidos.html">Entrar</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            <form target="pagseguro" action="https://pagseguro.uol.com.br/security/webpagamentos/webpagto.aspx" method="post">
+                <input type="hidden" name="email_cobranca" value="suporte@lojamodelo.com.br" />
+                <input type="hidden" name="tipo" value="VER" />
+                <input type="image" src="https://p.simg.uol.com.br/out/pagseguro/i/botoes/pagamentos/99x61-carrinho-assina.gif" name="submit" alt="Visualizar carrinho de compras" />
+            </form>
             </ul>
         </nav>
-        </header>
+    </header>
 
     <section id="banner">
         <div class="container_column">
@@ -36,29 +39,24 @@
         </div>
         
     </section>
-    <section class="escrita">
-        <h3>Valorize o comércio local</h3> 
-            <p>Nossa produção é artesanal e é preparada com muito carinho para você e sua família.</p>
-        <div>
-            <div id="container_grid">
-                <div>
-                    <img src="defumado.jpg"  alt="histcooperativa">
-                    <p>Nossa História</p>
-                </div>
-                <div>
-                    <img src="hist.png"  alt="blogalunos">
-                    <p>Blog</p>
-                </div>
-                <div>
-                    <img src="contato.png"  alt="entreemcontato">
-                    <p>Contato</p> 
-                </div>
-            </div> 
-        </div>
+    <section class="corpo">
+        <h2>Valorize o ensino e o comércio local</h2>
+        <p>Adquirindo os produtos da Cooperativa dos Alunos da Etec Astor de Mattos Carvalho, você estará contribuindo e incentivando os alunos do curso de Agropecuária a se tornarem excelentes profisionais no ramo de embutidos, além de fazer a economia local girar. Já parou para pensar nisso? ;)</p>  </p>
+        <h4>Nossa produção é artesanal e é preparada com muito carinho para você e sua família.</h4>
     </section>
-    <section>
-        <div class="destaque">
-
+    <section class="flex">
+        </div>
+        <div>
+            <img src="hist.png" alt="blogalunos">
+            <p><a href="sobre.html">Nossa História</a></p>
+        </div>
+        <div>
+            <img src="defumado.jpg" alt="loja">
+            <p><a href="loja.html">Produtos</a></p>
+        </div>
+        <div>
+            <img src="contato.png" alt="entreemcontato">
+            <p><a href="contato.html">Contato</a></p>
         </div>
     </section>
     <section>
@@ -66,25 +64,19 @@
             <p> Aqui você encontra defumados e embutidos sem corantes químicos.<a href="loja.html"> Confira!</a></p>
         </div>
     </section>
-
-
     <footer>
         <div class="footer">
             <h3>Acompanhe nossas redes sociais</h3>
             <ul class="social">
-                <li><a href="https://www.facebook.com/Etecvestibulinho/"><img src="fb.png" alt="facebook"></a></li>
-                <li><a href="https://www.instagram.com/etecastordemattoscarvalho/"><img src="ig.png" alt="instagram"></a></li>
-                <li><a href="https://www.youtube.com/channel/UCtf8iGaEYnndnDQ2HkCKdvw?view_as=subscriber"><img src="youtube.png" alt="youtube"></a></li>
-                <li><a href="https://www.web.whatsapp.com/"><img src="whatsapp.png" alt="whatsapp"></a></li>
+                <li><a href="https://www.facebook.com/Etecvestibulinho/" target="_blank"><img src="fb.png" alt="facebook"></a></li>
+                <li><a href="https://www.instagram.com/etecastordemattoscarvalho/" target="_blank"><img src="ig.png" alt="instagram"></a></li>
+                <li><a href="https://bit.ly/3fwX0X1" target="_blank"><img src="youtube.png" alt="youtube"></a></li>
+                <li><a href="https://bit.ly/3enBy6V" target="_blank"><img src="whatsapp.png" alt="whatsapp"></a></li>
             </ul>
-           
             <h2>Etec Astor de Mattos Carvalho: Rodovia Lourenço Lozano, km 4 • Bairro Restinga</h2>
             <p> CEP 17480-000 - Cabrália Paulista/SP</p>
             <p>©2020 Cooperatec. Todos os direitos reservados</p>
             <p>Este é um projeto feito pelas aulas do curso técnico em informática para internet: Ana Caroline, Giovana, Thalita e Vitória</p>
-        </div>
-        <div class="desenvolvimento">
-            <p>Trabalho desenvolvido pelas alunas do Curso Informática para internet pelas alunas: Ana Caroline, Giovana, Thalita e Vitória</p>
         </div>
     </footer>
     

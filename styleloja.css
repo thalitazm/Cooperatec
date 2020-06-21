@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;  
+    border: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    list-style: none;
+}
+/* Header */
+a{
+    text-decoration:none;
+    color: antiquewhite;
+}
+.header{
+    width: 300px auto;
+    background: #262625;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    padding: 25px;
+    align-items: center;
+}
+.menu{
+    display: flex;
+}
+.menu li{
+    margin-left: 10px;
+
+}
+.menu li a{
+    display: block;
+    padding: 10px;
+}
+.menu li a:hover{
+    color: #ff9900;
+}
+body {
+    margin-bottom: 100px;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 100px;
+}
+
+img {
+    max-width: 100%; /* imagem responsiva */
+    display: block;
+}
+
+
+/*CSS FLEXBOX 1*/
+.contato{
+    margin-top: -75px;
+    width: 100%; 
+    max-width: 400px;
+    text-align: center;
+    padding: 50px;
+}
+
+.contato h3{
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom:32px;
+    margin: 50px;
+    color:#262625;
+    opacity:0.85;
+
+}
+.contato p{
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom:32px;
+    color:#262625;
+    opacity:0.75;
+}
+.content h2{
+    background-color: #262625;
+    opacity: 0.85;
+}
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin:0 auto; /* alinha ao centro quando passa dos 800px */
+}
+.flex > div {
+    flex: 1 1 200px;
+    margin: 10px;
+    font-size: 18px;
+    line-height: 28px;
+    background-color: #262625;
+}
+.flex p{
+    text-align: center;
+    color: antiquewhite;
+    padding: 5px;
+}
+/*CSS GRID 1*/
+.grid1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* forma mais bonita de escrever => divide 100% em três partes iguais */
+    max-width: 800px;
+    padding: 10px;
+    margin: 0 auto;
+    grid-gap: 20px;
+}
+.grid1 p{
+    color: #262625;
+}
+
+.grid1 > div:nth-child(n + 4){ /* escolhe o filho que vai ser estilizado */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    align-items: center;/* alinhar itens ao centro */
+    color: #262625;
+    margin-top: 20px;
+}
+.grid1 > div.anuncio {
+    grid-column: 1;
+    grid-row: 2/5 ;
+    display: block;
+}
+
+/* transforma em responsivo */
+@media (max-width: 400px){
+    .grid1 {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+h1{
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom:20px;
+    margin: 50px;
+    text-align: center;
+    color:#262625;
+    opacity:0.85;
+}
+
+/* Footer */
+.footer{
+
+    position: absolute;
+    margin-bottom:0;
+    width:100%;
+    height: 250px;
+    background:#044002;
+    padding:20px 0px; 
+
+}
+.footer h3{
+    
+    padding:20px;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+}
+
+.social{
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    padding:10px;   
+}
+.social li a{
+
+    display: flex;
+    width: 150px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.footer h2{
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;   
+}
+.footer p{
+    
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+     
+}
+
